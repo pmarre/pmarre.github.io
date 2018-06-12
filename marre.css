@@ -1,0 +1,498 @@
+/*---- Base Styling ----*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: coral;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+/*---- Header ----*/
+
+.banner {
+    padding: 150px;
+    width: 100%;
+    background-image: url(erico-marcelino-235177-unsplash.jpg);
+    background-color: tomato;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -1000;
+}
+
+h1,
+span {
+    text-align: center;
+}
+
+.headline {
+    font-family: "Tinos", cursive;
+}
+
+
+h2,
+p {
+    text-align: center;
+}
+
+h2 {
+    font-family: "Tinos", sans-serif;
+}
+
+/*---- Main Content ----*/
+
+.about-me,
+.port-header {
+    font-size: 2em;
+}
+
+.about-content {
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+/*---- Footer ----*/
+
+footer {
+    padding: 2em;
+    border-top: solid 1px black color: white;
+    text-align: center;
+    height: calc(100vh-56px);
+}
+
+/*---- About Page ----*/
+
+.myPhoto {
+    border-radius: 80%;
+    border: solid coral 5px;
+    height: 200px;
+    width: 200px;
+    margin: 15px auto;
+
+}
+
+.about-banner {
+    padding: 75px 10px;
+    width: 100%;
+    background-color: coral;
+    color: white;
+    z-index: -1000;
+}
+
+
+
+/*---- Media Queries ----*/
+
+@media (max-width: 795px) {
+    .main-nav {
+        display: none;
+    }
+
+    .menu-icon {
+        padding-top: 15px;
+    }
+
+    .menu-bar {
+        background-color: black;
+        width: 30px;
+        height: 5px;
+        margin: 0 auto;
+        margin-top: 3px;
+    }
+
+
+    .menu-bar:nth-child(3) {
+        margin-bottom: 25px;
+    }
+
+    .menu-bar:nth-child(1):hover {
+        background-color: coral;
+        width: 20px;
+    }
+    .menu-bar:nth-child(2):hover {
+        background-color: coral;
+        width: 20px;
+    }
+    .menu-bar:nth-child(3):hover {
+        background-color: coral;
+        width: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .head-contain {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .headline {
+        text-align: center;
+        margin: 0;
+
+    }
+    .button-contain {
+        margin: 0 auto;
+    }
+
+    .port-btn,
+    .contact-btn {
+        width: 100px;
+        padding: .5em;
+        margin-top: 10px;
+    }
+
+    .port-btn {
+        background-color: coral;
+        color: white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+        border: none;
+        border-radius: 5%;
+    }
+
+    .contact-btn {
+        background-color: gray;
+        color: white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+        border: none;
+        border-radius: 5%;
+    }
+
+
+    .port-item {
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .port-item:hover {
+        opacity: .9;
+    }
+
+    .port-text {
+        color: white;
+        line-height: .5;
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        transform: translate(75%, 70%);
+    }
+
+    .itemOne {
+        background-image: url("ahmed-rizkhaan-273537-unsplash.jpg");
+
+    }
+    .itemTwo {
+        background-image: url("ian-simmonds-274502-unsplash.jpg");
+
+    }
+    .itemThree {
+        background-image: url("andreas-vendelbo-413267-unsplash.jpg");
+    }
+
+    /*---- Contact Page ----*/
+    .contact-banner {
+        padding: 75px 10px 10px 10px;
+        width: 100%;
+        background-color: white;
+        color: coral;
+        z-index: -1000;
+    }
+
+    .contact-headline {
+        color: coral;
+        margin: 5px auto;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .contact-stuff {
+        display: inline-flex;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*    background-color: aliceblue;*/
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
+        max-width: 400px;
+    }
+
+    form {
+        padding: 30px;
+        min-width: 100%;
+    }
+
+    input,
+    textarea {
+        margin: 5px auto;
+        padding: 5px;
+        color: gainsboro;
+        min-width: 100%;
+    }
+
+    input:focus {
+        color: black;
+
+    }
+
+    textarea:focus {
+        color: black;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+}
+
+@media (min-width: 796px) {
+
+    .nav-container {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+        z-index: 3000;
+    }
+
+    .main-nav {
+        flex: 1 50%;
+        flex-direction: row;
+        padding: .5em;
+        float: right;
+    }
+
+    .icon-container {
+        display: none;
+    }
+
+    .banner {
+        min-height: 50vh;
+    }
+
+    .headline {
+        line-height: 0;
+        font-size: 5em;
+    }
+
+    .subText {
+        margin: 0;
+        line-height: .5;
+        font-size: 1.5em;
+    }
+
+    .button-contain {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .port-btn,
+    .contact-btn {
+        width: 150px;
+        padding: .5em;
+        margin-top: 20px;
+    }
+
+    .port-btn {
+        background-color: coral;
+        color: white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+        border: none;
+        margin-right: 10px;
+        border-radius: 5%;
+    }
+
+    .contact-btn {
+        background-color: gray;
+        color: white;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+        border: none;
+        border-radius: 5%;
+    }
+
+    ul,
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .nav-item {
+        list-style: none;
+        margin: 0 auto;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .nav-item:hover {
+        border-bottom: solid 3px;
+        border-bottom-color: coral;
+    }
+
+    .nav-item:active {
+        border-bottom: solid 3px;
+        border-bottom-color: coral;
+    }
+
+    .port-item {
+        width: 80%;
+        height: 300px;
+        margin: 10px auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, .4);
+    }
+
+    .port-item:hover {
+        opacity: .9;
+    }
+
+    .port-text {
+        color: white;
+        line-height: .5;
+        margin: 0 auto;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, .6);
+        padding: 0 50px;
+    }
+    .itemOne {
+        background-image: url(ahmed-rizkhaan-273537-unsplash.jpg);
+    }
+
+    .itemTwo {
+        background-image: url(ian-simmonds-274502-unsplash.jpg);
+    }
+    .itemThree {
+        background-image: url(andreas-vendelbo-413267-unsplash.jpg);
+    }
+
+    /*---- Contact Page ----*/
+    .contact-banner {
+        padding: 75px 10px 10px 10px;
+        width: 100%;
+        background-color: white;
+        color: coral;
+        z-index: -1000;
+    }
+
+    .contact-headline {
+        color: coral;
+        margin: 5px auto;
+        text-align: center;
+        padding-top: 70px;
+        font-size: 2em;
+    }
+
+    .contact-stuff {
+        display: inline-flex;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0px 1px 8px rgba(0, 0, 0, .4);
+        max-width: 400px;
+        background-color: gainsboro;
+        color: black;
+    }
+
+    form {
+        padding: 30px;
+        min-width: 100%;
+    }
+
+    input,
+    textarea {
+        margin: 5px auto;
+        padding: 5px;
+        color: gainsboro;
+        min-width: 100%;
+    }
+
+    input:focus {
+        color: black;
+
+    }
+
+    textarea:focus {
+        color: black;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
