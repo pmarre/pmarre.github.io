@@ -14,34 +14,46 @@
     <div class="wrapper">
         <header class="container nav-container">
             <nav>
+                <!--     Full page nav           -->
                 <ul class="main-nav">
                     <li class="nav-item"><a class="home-page" href="#">Home</a></li>
                     <li class="nav-item"><a class="portfolio-page" href="#">Portfolio</a></li>
                     <li class="nav-item"><a class="contact-page" href="contact.html">Contact</a></li>
                 </ul>
+
+                <!--   Mobile Nav -->
+                <div class="overlay" id="myNav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="marre.html">Home</a>
+                        <a href="#">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
                 <div class="icon-container">
-                    <div class="menu-icon">
+                    <div class="menu-icon" onclick="openNav()">
                         <div class="menu-bar"></div>
                         <div class="menu-bar"></div>
                         <div class="menu-bar"></div>
                     </div>
+
                 </div>
             </nav>
         </header>
 
         <div class="banner">
             <div class="head-contain container">
-                <h1 class="headline">Patrick Marre</h1>
-                <span class="subText">Design & Develop</span>
+                <div class="title-heading">
+                    <h1 class="headline">Patrick Marre</h1>
+                    <span class="subText" id="span-head">Design &amp; Develop</span>
 
-                <div class="button-contain">
-                    <button class="port-btn">Portfolio</button>
-                    <button class="contact-btn">Contact</button>
+                    <div class="button-contain">
+                        <button class="port-btn" onclick="window.location.href = 'contact.html';"><a href="#">Portfolio</a></button>
+                        <button class="contact-btn"><a href="contact.html">Contact</a></button>
+                    </div>
                 </div>
             </div>
         </div>
-
-
         <section class="about container">
             <h2 class="about-me">About Me</h2>
             <p class="about-content">My name is Patrick Marre. I am self taught web developer and designer. I graduated from the University of Washington in 2013, where I competed on the UW Rowing team for all four years. My experience there took me around the world and continues to inspire my designs today. Below is a look into some of the work I have done. I hope you enjoy!</p>
@@ -78,10 +90,10 @@
         </footer>
 
     </div>
-    <!--
-    <script src="jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="marre.js"></script>
--->
+
 </body>
 
 </html>
