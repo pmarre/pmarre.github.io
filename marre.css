@@ -28,7 +28,16 @@ a {
     color: black;
 }
 
-a:active {
+a:focus {
+    color: coral;
+}
+
+button a {
+    color: white;
+}
+
+button:hover {
+    opacity: .9;
     color: coral;
 }
 
@@ -152,31 +161,68 @@ footer {
         background-color: coral;
         width: 20px;
     }
+    /*---- Mobile Menu Overlay ----*/
+    #myNav {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 3000;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, .8);
+        overflow-x: hidden;
+        transition: .5s;
+    }
 
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: coral;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    /*    Finish Menu Overlay    */
     .container {
         width: 90%;
     }
 
-    .head-contain {
-        width: 100%;
-        margin: 0 auto;
-
+    .banner {
+        padding: 30% 0;
     }
 
-    .headline {
-        text-align: center;
-        margin: 0;
+    .headline,
+    .subText {
+        display: block;
 
-    }
-    .button-contain {
-        margin: 0 auto;
     }
 
     .port-btn,
     .contact-btn {
         width: 100px;
         padding: .5em;
-        margin-top: 10px;
+        display: block;
+        margin: 10px auto;
     }
 
     .port-btn {
@@ -216,6 +262,7 @@ footer {
         text-align: center;
         position: absolute;
         transform: translate(75%, 70%);
+        width: 80%;
     }
 
     .itemOne {
@@ -295,6 +342,9 @@ footer {
 }
 
 @media (min-width: 796px) {
+    #myNav {
+        display: none;
+    }
 
     .nav-container {
         display: flex;
@@ -318,6 +368,7 @@ footer {
 
     .banner {
         min-height: 50vh;
+
     }
 
     .headline {
@@ -331,9 +382,19 @@ footer {
         font-size: 1.5em;
     }
 
+    .headline,
+    .subText {
+        display: block;
+    }
+
+    .title-heading {
+        display: block;
+        margin: 0 auto;
+    }
+
     .button-contain {
         display: inline-block;
-        margin: 0 auto;
+        margin:
     }
 
     .port-btn,
@@ -416,6 +477,7 @@ footer {
         transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, .6);
         padding: 0 50px;
+        min-width: 40%;
     }
     .itemOne {
         background-image: url(ahmed-rizkhaan-273537-unsplash.jpg);
