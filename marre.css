@@ -32,12 +32,13 @@ a:focus {
     color: coral;
 }
 
-button a {
+.main-btn a {
     color: white;
+    display: block;
 }
 
 button:hover {
-    opacity: .9;
+    opacity: .8;
     color: coral;
 }
 
@@ -53,13 +54,13 @@ ol {
 .banner {
     padding: 150px;
     width: 100%;
-    background-image: url(erico-marcelino-235177-unsplash.jpg);
+    background-image: url(willian-justen-de-vasconcellos-603962-unsplash.jpg);
     background-color: tomato;
     color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
+    /*    position: relative;*/
     z-index: -1000;
 }
 
@@ -265,6 +266,10 @@ footer {
         width: 80%;
     }
 
+    .port-item a {
+        display: block;
+    }
+
     .itemOne {
         background-image: url("ahmed-rizkhaan-273537-unsplash.jpg");
 
@@ -341,7 +346,7 @@ footer {
     }
 }
 
-@media (min-width: 796px) {
+@media (min-width: 795px) {
     #myNav {
         display: none;
     }
@@ -393,8 +398,9 @@ footer {
     }
 
     .button-contain {
-        display: inline-block;
-        margin:
+
+        margin: 0 auto;
+        z-index: 10000;
     }
 
     .port-btn,
@@ -402,10 +408,6 @@ footer {
         width: 150px;
         padding: .5em;
         margin-top: 20px;
-    }
-
-    .port-btn {
-        background-color: coral;
         color: white;
         box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
         border: none;
@@ -413,12 +415,13 @@ footer {
         border-radius: 5%;
     }
 
+    .port-btn {
+        background-color: coral;
+        color: white;
+    }
+
     .contact-btn {
         background-color: gray;
-        color: white;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
-        border: none;
-        border-radius: 5%;
     }
 
     ul,
