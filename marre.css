@@ -39,7 +39,7 @@ a:focus {
 
 button:hover {
     opacity: .8;
- 
+
 }
 
 ul,
@@ -271,7 +271,7 @@ footer {
     }
 
     .itemOne {
-        background-image: url("ahmed-rizkhaan-273537-unsplash.jpg");
+        background-image: url("edgar-chaparro-669210-unsplash.jpg");
 
     }
     .itemTwo {
@@ -483,7 +483,8 @@ footer {
         min-width: 40%;
     }
     .itemOne {
-        background-image: url(ahmed-rizkhaan-273537-unsplash.jpg);
+        background-image: url("edgar-chaparro-669210-unsplash.jpg");
+        background-position: top;
     }
 
     .itemTwo {
