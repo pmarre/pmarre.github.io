@@ -1,0 +1,306 @@
+@media (max-width: 795px) {
+
+    * {
+        font-family: "Roboto";
+        box-sizing: border-box;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    nav {
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main-head span {
+        text-transform: uppercase;
+        margin: auto 0;
+        font-size: 1.5rem;
+        order: 3;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;
+        font-size: .75rem;
+        text-align: center;
+    }
+
+    .sub-nav li {
+        order: 2;
+        text-align: center;
+    }
+
+
+    .banner {
+        background-image: url("PublicGoods_Bathroom_0960.jpg");
+        background-repeat: no-repeat;
+        background-position: 10% 60%;
+        background-size: cover;
+        padding: 10px 10px 30px 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    button {
+        height: 60px;
+        width: 200px;
+    }
+
+
+
+    /*--- Section One ---*/
+    .content-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .content-1 h2 {
+        font-size: 2.25rem;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .content-1 p {
+        font-size: 1.125rem;
+        line-height: 26px;
+        text-align: center;
+        background-color: black;
+        opacity: .5;
+        color: white;
+        padding: 10px;
+    }
+
+    .btn-1 {
+        margin-top: 20px;
+        background-color: white;
+        box-shadow: none;
+        border: none;
+        margin: 0 auto;
+    }
+
+    /*--- Section Two ---*/
+    .content-2 button {
+        margin: 0 auto;
+
+    }
+
+    .content-2 h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+
+    .btn-2 {
+        margin-top: 20px;
+        background-color: dimgray;
+        color: white;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-item {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .flex-item h4 {
+        font-size: 1.125rem;
+    }
+
+    .flex-item p {
+        font-size: 1.125rem;
+        line-height: 26px;
+    }
+
+    /*--- Section Three ---*/
+    .content-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .content-3 h3 {
+        font-size: 1.5rem;
+    }
+
+    .content-3 h2 {
+        font-size: 2.25rem;
+        line-height: 40px;
+    }
+
+    .content-3 p {
+        font-size: 1.125rem;
+        line-height: 26px;
+    }
+
+    .btn-3 {
+        background-color: dimgray;
+        color: white;
+        margin: 0 auto;
+    }
+
+    .banner-2 {
+        background-image: url("PublicGoods_Laydown_0443.jpg");
+        background-repeat: no-repeat;
+        background-position: 90% 65%;
+        background-size: cover;
+        padding: 30px 30px 50px 30px;
+        width: 100%;
+        margin-top: 60px;
+
+    }
+
+
+    /*--- Section Four ---*/
+    .shop h3 {
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+
+    .shop h3 {
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .grid-contain {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .shop-items {
+        padding: 0px;
+    }
+
+    .shop-img {
+        background-image: url("Toothpaste%20Product.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .shop-item p {
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .shop-item {
+        text-align: center;
+        list-style: none;
+        width: 60%;
+        margin: 10px auto;
+
+    }
+
+    /*--- Footer ---*/
+    footer {
+        width: 100%;
+        background-color: black;
+    }
+
+    form {
+        padding-top: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    label {
+        color: white;
+        font-size: 0.625rem;
+    }
+
+    input {
+        padding: 5px;
+        margin-top: 10px;
+        border: solid 2px white;
+        color: white;
+        background-color: black;
+        font-size: 0.625rem;
+        width: 50%;
+    }
+
+    .subscribe {
+        width: 25%;
+        color: black;
+        background-color: white;
+    }
+
+    .sign {
+        color: white;
+        font-size: .625rem;
+        width: 30%;
+        line-height: 12px;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .bottom-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px;
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+
+    .bottom-nav ul {
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+    .bottom-nav li {
+        display: inline-block;
+        color: white;
+        padding: 0px;
+        margin: 0 5px;
+        font-size: .625rem;
+    }
+
+
+    .copyright {
+        color: white;
+        font-size: .625rem;
+        margin: 5px auto;
+    }
