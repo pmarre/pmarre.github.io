@@ -1,4 +1,4 @@
-/*---- Base Styling ----*/
+\/*---- Base Styling ----*/
 
 * {
     box-sizing: border-box;
@@ -261,7 +261,6 @@ footer {
     }
 
     .port-text {
-        color: white;
         line-height: .5;
         margin: 0 auto;
         text-align: center;
@@ -276,11 +275,14 @@ footer {
 
     .itemOne {
         background-image: url("edgar-chaparro-669210-unsplash.jpg");
-
+        background-position: top;
+        color: white;
     }
+
     .itemTwo {
         background-image: url("PublicGoods_Laydown_0443.jpg");
-
+        background-position: center;
+        color: black;
     }
     .itemThree {
         background-image: url("andreas-vendelbo-413267-unsplash.jpg");
@@ -345,7 +347,6 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, .6);
         padding: 0 10px
     }
 }
