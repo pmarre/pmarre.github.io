@@ -265,7 +265,8 @@ footer {
         color: black;
     }
     .itemThree {
-        background-image: url("andreas-vendelbo-413267-unsplash.jpg");
+        background-image: url("tree.jpg");
+        color: white;
     }
 
     /*---- Contact Page ----*/
@@ -464,7 +465,6 @@ footer {
     }
 
     .port-text {
-
         line-height: .5;
         margin: 0 auto;
         text-align: center;
@@ -487,7 +487,8 @@ footer {
         color: black;
     }
     .itemThree {
-        background-image: url("andreas-vendelbo-413267-unsplash.jpg");
+        background-image: url("tree.jpg");
+        color: white;
     }
 
     /*---- Contact Page ----*/
