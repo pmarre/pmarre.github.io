@@ -88,6 +88,16 @@ h2 {
     font-family: "Tinos", sans-serif;
 }
 
+.social-icons {
+    margin: 40px auto;
+    font-size: 2rem;
+}
+
+a i {
+    margin: 0 20px;
+    color: white;
+}
+
 /*---- Main Content ----*/
 
 .about-me,
@@ -267,6 +277,10 @@ footer {
     .itemThree {
         background-image: url("tree.jpg");
         color: white;
+    }
+
+    .itemThree h2 {
+        line-height: 1;
     }
 
     /*---- Contact Page ----*/
@@ -465,6 +479,7 @@ footer {
     }
 
     .port-text {
+
         line-height: .5;
         margin: 0 auto;
         text-align: center;
