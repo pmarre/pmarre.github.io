@@ -1,5 +1,5 @@
 * {
-    font-family: Sans-serif;
+    font-family: "Roboto";
     box-sizing: border-box;
 }
 
@@ -22,45 +22,34 @@ a {
     color: black;
 }
 
-.nav-wrap {
-    display: inline-block;
-    padding: 20px;
-    font-family: "Roboto";
-    font-size: 1.125em;
-    background-color: black;
-    width: 100%;
-    opacity: .7;
-
-}
-
 nav {
-    float: right;
+    float: left;
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 
 }
 
 nav a {
     margin: 0 10px;
+    flex: 2;
+    text-align: center;
 
 }
 
 .nav-item {
     color: white;
-
 }
-
 
 .nav-item:hover {
     color: yellow;
-    border-bottom: solid 2px yellow;
+
 }
 
 .nav-item:active {
     color: yellow;
-    border-bottom: solid 2px yellow;
-}
 
-.logo {
-    float: right;
 }
 
 .banner {
@@ -72,71 +61,156 @@ nav a {
     height: 100%;
 }
 
-.title-cont h1 {
-    font-size: 4em;
-    margin: 0 auto;
-    font-family: "Roboto Slab";
+
+/*--- Mobile Display ---*/
+
+@media (max-width: 795px) {
+
+    .main-title {
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        color: white;
+    }
+
+    .em {
+        font-style: normal;
+        color: yellow;
+        font-family: "Roboto";
+    }
+
+    .title-cont h1 {
+        margin: 0 auto;
+    }
+
+    .main-cta,
+    .main-wod {
+        padding: 5px 25px;
+        margin: 10px auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 1px rgba(0, 0, 0, .4);
+        display: block;
+        max-width: 150px;
+    }
+
+    .main-cta {
+        background-color: yellow;
+
+    }
+
+    .main-wod {
+        background-color: white;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
-.main-title {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-.em {
-    font-style: normal;
-    color: yellow;
-    font-family: "Roboto";
-}
-
-.title-cont {
-    background-color: black;
-    padding: 20px;
-    opacity: .7;
-}
-
-.main-cta,
-.main-wod {
-    padding: 10px 40px;
-    margin: 0 5px;
-    border-radius: 5px;
-    box-shadow: 0 4px 1px rgba(0, 0, 0, .4);
-}
-
-.main-cta {
-    background-color: yellow;
-
-}
 
 
-/*--- Classes ---*/
 
-section {
-    margin: 0 auto;
-    height: 400px;
-    background-color: white;
-}
+/*--- Computer Display ---*/
 
-.banner-classes {}
+@media (min-width: 795px) {
+    .main-title {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        color: white;
+    }
 
-.parallax-cont {
-    background-image: url("edgar-chaparro-669210-unsplash.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 400px;
-}
+    .nav-item {
+        font-size: 1.125em;
+    }
 
-.parallax-cont-1 {
-    background-image: url("ahmed-rizkhaan-273537-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 500px;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .title-cont h1 {
+        font-size: 4em;
+        margin: 0 auto;
+        font-family: "Roboto Slab";
+    }
+
+    .main-title {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .em {
+        font-style: normal;
+        color: yellow;
+        font-family: "Roboto";
+    }
+
+    .title-cont {
+        /*        background-color: black;*/
+        padding: 20px;
+        opacity: ;
+        /*        margin-bottom: 10px;*/
+    }
+
+    .main-cta,
+    .main-wod {
+        padding: 10px 40px;
+        margin: 0 5px;
+        border-radius: 5px;
+        box-shadow: 0 4px 1px rgba(0, 0, 0, .4);
+    }
+
+    .main-cta {
+        border: solid yellow 2px;
+        background-color: none;
+        color: yellow;
+        font-family: "Roboto";
+
+    }
+
+    .main-wod {
+        border: solid white 2px;
+        background-color: none;
+        color: white;
+
+    }
+
+    /*--- Workout Classes ---*/
+    section {
+        margin: 0 auto;
+        height: 400px;
+        background-color: white;
+    }
+
+    .banner-classes {}
+
+    .parallax-cont {
+        background-image: url("edgar-chaparro-669210-unsplash.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 400px;
+    }
+
+    .parallax-cont-1 {
+        background-image: url("ahmed-rizkhaan-273537-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 500px;
+    }
+
 }
