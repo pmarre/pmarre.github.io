@@ -54,6 +54,34 @@ p {
     line-height: 20px;
 }
 
+.github-btn {
+    width: 150px;
+    height: 50px;
+    background-color: gray;
+    border: none;
+    color: white;
+}
+
+.gh-link {
+    color: white;
+}
+
+.p1-btn {
+    width: 150px;
+    height: 50px;
+    background-color: coral;
+    border: none;
+    color: white;
+    margin: 10px;
+}
+
+.p1-link {
+    color: white;
+}
+
+.github-btn:hover {
+    opacity: 1;
+}
 
 /*---- Header ----*/
 
@@ -86,6 +114,7 @@ p {
 
 h2 {
     font-family: "Tinos", sans-serif;
+    line-height: 1.2;
 }
 
 .social-icons {
@@ -109,7 +138,10 @@ a i {
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 2em;
+    width: 80%;
+    margin: 0 auto;
 }
+
 
 /*---- Footer ----*/
 
@@ -127,6 +159,7 @@ footer {
 @media (max-width: 795px) {
     .main-nav {
         display: none;
+
     }
 
     .menu-icon {
@@ -239,16 +272,13 @@ footer {
 
     .port-item {
         width: 100%;
-        height: 200px;
+        min-height: 300px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
     }
 
-    .port-item:hover {
-        opacity: .9;
-    }
 
     .port-text {
         line-height: .5;
@@ -263,9 +293,8 @@ footer {
         display: block;
     }
 
-    .itemOne {
-        background-image: url("edgar-chaparro-669210-unsplash.jpg");
-        background-position: top;
+    #port2,
+    #port2p {
         color: white;
     }
 
@@ -342,7 +371,12 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 0 10px
+        padding: 0 10px;
+    }
+
+    .port2,
+    port2p {
+        color: white;
     }
 }
 
@@ -358,6 +392,10 @@ footer {
         background-color: white;
         box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
         z-index: 3000;
+    }
+
+    .navbar {
+        z-index: 10000;
     }
 
     .main-nav {
@@ -398,9 +436,8 @@ footer {
     }
 
     .button-contain {
-
         margin: 0 auto;
-        z-index: 10000;
+        z-index: 1000;
     }
 
     .port-btn,
@@ -442,14 +479,10 @@ footer {
         margin: 0 auto;
         padding: 5px;
         margin: 5px;
+        height: 30px;
     }
 
     .nav-item:hover {
-        border-bottom: solid 3px;
-        border-bottom-color: coral;
-    }
-
-    .nav-item:active {
         border-bottom: solid 3px;
         border-bottom-color: coral;
     }
@@ -474,10 +507,6 @@ footer {
         box-shadow: 0 8px 8px rgba(0, 0, 0, .4);
     }
 
-    .port-item:hover {
-        opacity: .9;
-    }
-
     .port-text {
 
         line-height: .5;
@@ -490,9 +519,9 @@ footer {
         padding: 0 50px;
         min-width: 40%;
     }
-    .itemOne {
-        background-image: url("edgar-chaparro-669210-unsplash.jpg");
-        background-position: top;
+
+    #port2,
+    #port2p {
         color: white;
     }
 
@@ -507,61 +536,17 @@ footer {
     }
 
     /*---- Contact Page ----*/
-    .contact-banner {
-        padding: 75px 10px 10px 10px;
-        width: 100%;
-        background-color: white;
-        color: coral;
-        z-index: -1000;
-    }
-
-    .contact-headline {
-        color: coral;
-        margin: 5px auto;
-        text-align: center;
-        padding-top: 70px;
-        font-size: 2em;
-    }
-
-    .contact-stuff {
-        display: inline-flex;
-        margin: 0 auto;
-        flex-direction: row;
+    #contact-info {
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, .4);
-        max-width: 400px;
-        background-color: gainsboro;
-        color: black;
     }
 
-    form {
-        padding: 30px;
-        min-width: 100%;
+    #contact-info span {
+        margin-bottom: 5px;
     }
 
-    input,
-    textarea {
-        margin: 5px auto;
-        padding: 5px;
-        color: gainsboro;
-        min-width: 100%;
+    #contact-info a {
+        margin-bottom: 5px;
     }
-
-    input:focus {
-        color: black;
-
-    }
-
-    textarea:focus {
-        color: black;
-    }
-
-    .contact-info {
-        width: 100%;
-        margin: 5px;
-        padding: 5px;
-    }
-
-}
-
 }
