@@ -3,7 +3,7 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-
+    <!--
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74331224-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,7 +15,7 @@
 
     gtag('config', 'UA-74331224-1');
 </script>
-
+-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marre Design</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -28,12 +28,12 @@
 <body>
     <div class="wrapper">
         <header class="container nav-container">
-            <nav>
+            <nav class="navbar">
                 <!--     Full page nav           -->
                 <ul class="main-nav">
-                    <li class="nav-item"><a class="home-page" href="marre.html">Home</a></li>
+                    <li class="nav-item"><a class="home-page" href="#">Home</a></li>
                     <li class="nav-item"><a class="portfolio-page" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="contact-page" href="contact.html">Contact</li>
+                    <li class="nav-item"><a class="contact-page" href="#contact-info">Contact</li>
                 </ul>
 
                 <!--   Mobile Nav -->
@@ -42,7 +42,7 @@
                         <div class="overlay-content">
                             <a href="#">Home</a>
                             <a href="#portfolio">Portfolio</a>
-                            <a href="contact.html">Contact</a>
+                            <a href="#contact-info">Contact</a>
                         </div>
     </div>
     <div class="icon-container">
@@ -64,7 +64,7 @@
             </div>
             <div class="button-contain">
                 <button class="main-btn port-btn"><a href="#portfolio" class="external">Portfolio</a></button>
-                <button class="main-btn contact-btn"><a href="contact.html">Contact</a></button>
+                <button class="main-btn contact-btn"><a href="#contact-info">Contact</a></button>
             </div>
             <div class="social-icons">
                 <a href="https://github.com/pmarre" target="_blank"><i class="fab fa-github"></i></a>
@@ -80,34 +80,37 @@
     <section class="portfolio container">
         <h2 class="port-header" id="portfolio">Portfolio</h2>
         <div class="port-contain">
-            <a class="portLinkOne" href="cfh.html" target="_blank">
-                <div class="port-item itemOne">
-                    <div class="port-text">
-                        <h2>CrossFit Hillsboro</h2>
-                        <p>A redesign of a local CrossFit Gym</p>
-                    </div>
-                </div>
-            </a>
-            <a class="portLinkTwo" href="public_goods.html" target="_blank">
+
+            <a class="portLinkTwo" href="public_goods.html">
                 <div class="port-item itemTwo">
                     <div class="port-text">
                         <h2>PUBLIC GOODS</h2>
                         <p>A single page site focused on using CSS Flexbox</p>
+                        <a class="p1-link" href="public_goods.html" target="_blank"><button class="p1-btn">View Site</button></a>
+                        <a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/public_goods.html" target="_blank"><button class="github-btn">GITHUB</button></a>
+
                     </div>
                 </div>
             </a>
-            <a class="portLinkThree" href="blackoak/index.html" target="_blank">
+            <a class="portLinkThree" href="blackoak/index.html">
                 <div class="port-item itemThree">
-                    <div class="port-text">
-                        <h2>Black Oak Forest Consulting</h2>
-                        <p>A project focused on using Bootstrap</p>
+                    <div class="port-text port-text2">
+                        <h2 id="port2">Black Oak Forest Consulting</h2>
+                        <p id="port2p">A project focused on using Bootstrap</p>
+                        <a class="p1-link" href="blackoak/index.html" target="_blank"><button class="p1-btn">View Site</button></a>
+                        <button class="github-btn"><a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/blackoak/index.html" target="_blank">GITHUB</a></button>
                     </div>
                 </div>
             </a>
         </div>
     </section>
     <footer class="main-footer">
-        <span>&copy; 2018 Patrick Marre Design Co.</span>
+        <div id="contact-info">
+            <span>&copy; 2018 Patrick Marre Design Co.</span>
+            <a href="mailto:pmarre40@gmail.com">pmarre40@gmail.com</a>
+            <span>(503)351-9504</span>
+
+        </div>
     </footer>
 
     </div>
