@@ -39,79 +39,89 @@
                 <!--   Mobile Nav -->
                 <div class="overlay" id="myNav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <div class="overlay-content">
-                            <a href="#">Home</a>
-                            <a href="#portfolio">Portfolio</a>
-                            <a href="#contact-info">Contact</a>
+                    <div class="overlay-content">
+                        <a href="#">Home</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact-info">Contact</a>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <div class="menu-icon" onclick="openNav()">
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                        <div class="menu-bar"></div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <div class="container">
+                <div class="title-heading">
+                    <h1 class="headline">Patrick Marre</h1>
+
+                </div>
+                <div class="button-contain">
+                    <button class="main-btn port-btn"><a href="#portfolio" class="external">Portfolio</a></button>
+                    <button class="main-btn contact-btn"><a href="#contact-info">Contact</a></button>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/pmarre" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/pmdelyte/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/patrickmarre/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <section class="about container">
+            <h2 class="about-me">About Me</h2>
+            <p class="about-content">My name is Patrick Marre. I am self taught web developer and designer. I graduated from the University of Washington in 2013, where I competed on the UW Rowing team for all four years. My experience there took me around the world and continues to inspire my designs today. Below is a look into some of the work I have done. I hope you enjoy!</p>
+        </section>
+        <section class="portfolio container">
+            <h2 class="port-header" id="portfolio">Portfolio</h2>
+            <div class="port-contain">
+                <a class="portLinkTwo" href="highestNum.html">
+                    <div class="port-item itemOne">
+                        <div class="port-text">
+                            <h2 id="port1">Highest Number</h2>
+                            <p id="port1p">A Javascript exercise to find the highest number of a random array</p>
+                            <a class="p1-link" href="highestNum.html" target="_blank"><button class="p1-btn">View Site</button></a>
+                            <a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/highestNum.html" target="_blank"><button class="github-btn">GITHUB</button></a>
+
                         </div>
-    </div>
-    <div class="icon-container">
-        <div class="menu-icon" onclick="openNav()">
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-        </div>
-
-    </div>
-    </nav>
-    </header>
-
-    <div class="banner">
-        <div class="container">
-            <div class="title-heading">
-                <h1 class="headline">Patrick Marre</h1>
-
-            </div>
-            <div class="button-contain">
-                <button class="main-btn port-btn"><a href="#portfolio" class="external">Portfolio</a></button>
-                <button class="main-btn contact-btn"><a href="#contact-info">Contact</a></button>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/pmarre" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/pmdelyte/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/patrickmarre/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-    <section class="about container">
-        <h2 class="about-me">About Me</h2>
-        <p class="about-content">My name is Patrick Marre. I am self taught web developer and designer. I graduated from the University of Washington in 2013, where I competed on the UW Rowing team for all four years. My experience there took me around the world and continues to inspire my designs today. Below is a look into some of the work I have done. I hope you enjoy!</p>
-    </section>
-    <section class="portfolio container">
-        <h2 class="port-header" id="portfolio">Portfolio</h2>
-        <div class="port-contain">
-
-            <a class="portLinkTwo" href="public_goods.html">
-                <div class="port-item itemTwo">
-                    <div class="port-text">
-                        <h2>PUBLIC GOODS</h2>
-                        <p>A single page site focused on using CSS Flexbox</p>
-                        <a class="p1-link" href="public_goods.html" target="_blank"><button class="p1-btn">View Site</button></a>
-                        <a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/public_goods.html" target="_blank"><button class="github-btn">GITHUB</button></a>
-
                     </div>
-                </div>
-            </a>
-            <a class="portLinkThree" href="blackoak/index.html">
-                <div class="port-item itemThree">
-                    <div class="port-text port-text2">
-                        <h2 id="port2">Black Oak Forest Consulting</h2>
-                        <p id="port2p">A project focused on using Bootstrap</p>
-                        <a class="p1-link" href="blackoak/index.html" target="_blank"><button class="p1-btn">View Site</button></a>
-                        <button class="github-btn"><a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/blackoak/index.html" target="_blank">GITHUB</a></button>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <footer class="main-footer">
-        <div id="contact-info">
-            <span>&copy; 2018 Patrick Marre Design Co.</span>
-            <a href="mailto:pmarre40@gmail.com">pmarre40@gmail.com</a>
-            <span>(503)351-9504</span>
+                </a>
+                <a class="portLinkTwo" href="public_goods.html">
+                    <div class="port-item itemTwo">
+                        <div class="port-text">
+                            <h2>PUBLIC GOODS</h2>
+                            <p>A single page site focused on using CSS Flexbox</p>
+                            <a class="p1-link" href="public_goods.html" target="_blank"><button class="p1-btn">View Site</button></a>
+                            <a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/public_goods.html" target="_blank"><button class="github-btn">GITHUB</button></a>
 
-        </div>
-    </footer>
+                        </div>
+                    </div>
+                </a>
+                <a class="portLinkThree" href="blackoak/index.html">
+                    <div class="port-item itemThree">
+                        <div class="port-text port-text2">
+                            <h2 id="port2">Black Oak Forest Consulting</h2>
+                            <p id="port2p">A project focused on using Bootstrap</p>
+                            <a class="p1-link" href="blackoak/index.html" target="_blank"><button class="p1-btn">View Site</button></a>
+                            <button class="github-btn"><a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/blackoak/index.html" target="_blank">GITHUB</a></button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer class="main-footer">
+            <div id="contact-info">
+                <span>&copy; 2018 Patrick Marre Design Co.</span>
+                <a href="mailto:pmarre40@gmail.com">pmarre40@gmail.com</a>
+                <span>(503)351-9504</span>
+
+            </div>
+        </footer>
 
     </div>
 
