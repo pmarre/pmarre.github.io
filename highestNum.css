@@ -1,0 +1,92 @@
+* {
+
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+    color: black;
+    font-family: "Bevan";
+    margin: 0;
+}
+
+#newArr,
+#findMax {
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    text-align: center;
+    border: none;
+    box-shadow: inset 4px 4px 15px rgba(0, 0, 0, .3);
+    font-family: "Roboto";
+}
+
+#newArr {
+    background-color: coral;
+    color: white;
+}
+
+#newArr:hover,
+#findMax:hover {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, .3);
+}
+
+#findMax {
+    background-color: aquamarine;
+    color: black;
+}
+
+.buttons {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#displayArr {
+    display: none;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, .3);
+    font-family: "Roboto";
+}
+
+#max {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#max h2 {
+    font-family: "Bevan";
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+}
+
+#maxNum {
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, .3);
+    width: 20%;
+    margin: 0 auto;
+    font-family: "Roboto";
+    display: none;
+}
