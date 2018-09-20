@@ -39,7 +39,7 @@ a:focus {
 }
 
 button:hover {
-    opacity: .8;
+    box-shadow: inset 4px 4px 15px rgba(0, 0, 0, .5);
 
 }
 
@@ -66,6 +66,10 @@ p {
     color: white;
 }
 
+.github-btn:hover {
+    box-shadow: inset 4px 4px 15px rgba(0, 0, 0, .5);
+}
+
 .p1-btn {
     width: 150px;
     height: 50px;
@@ -83,13 +87,16 @@ p {
     opacity: 1;
 }
 
+.fab:hover {
+    color: coral;
+}
+
 /*---- Header ----*/
 
 .banner {
-    padding: 150px;
+    padding: 15%;
     width: 100%;
     background-image: url(willian-justen-de-vasconcellos-603962-unsplash.jpg);
-    background-color: tomato;
     color: white;
     background-repeat: no-repeat;
     background-position: center;
@@ -157,6 +164,10 @@ footer {
 /*---- Media Queries ----*/
 
 @media (max-width: 795px) {
+    .banner {
+        padding: 50px 0;
+    }
+
     .main-nav {
         display: none;
 
@@ -183,14 +194,17 @@ footer {
         background-color: coral;
         width: 20px;
     }
+
     .menu-bar:nth-child(2):hover {
         background-color: coral;
         width: 20px;
     }
+
     .menu-bar:nth-child(3):hover {
         background-color: coral;
         width: 20px;
     }
+
     /*---- Mobile Menu Overlay ----*/
     #myNav {
         height: 0;
@@ -237,9 +251,7 @@ footer {
         width: 90%;
     }
 
-    .banner {
-        padding: 30% 0;
-    }
+
 
     .headline,
     .subText {
@@ -293,8 +305,19 @@ footer {
         display: block;
     }
 
+    #port1,
+    #port1p {
+        color: white;
+    }
+
     #port2,
     #port2p {
+        color: white;
+    }
+
+    .itemOne {
+        background-image: url("clement-h-544786-unsplash.jpg");
+        background-position: center;
         color: white;
     }
 
@@ -303,6 +326,7 @@ footer {
         background-position: center;
         color: black;
     }
+
     .itemThree {
         background-image: url("tree.jpg");
         color: white;
@@ -381,6 +405,8 @@ footer {
 }
 
 @media (min-width: 795px) {
+
+
     #myNav {
         display: none;
     }
@@ -508,7 +534,6 @@ footer {
     }
 
     .port-text {
-
         line-height: .5;
         margin: 0 auto;
         text-align: center;
@@ -520,8 +545,19 @@ footer {
         min-width: 40%;
     }
 
+    #port1,
+    #port1p {
+        color: white;
+    }
+
     #port2,
     #port2p {
+        color: white;
+    }
+
+    .itemOne {
+        background-image: url("clement-h-544786-unsplash.jpg");
+        background-position: center;
         color: white;
     }
 
@@ -530,6 +566,7 @@ footer {
         background-position: center;
         color: black;
     }
+
     .itemThree {
         background-image: url("tree.jpg");
         color: white;
