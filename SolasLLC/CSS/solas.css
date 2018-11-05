@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    font-weight: 200;
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0;
+}
+
+
+.main-nav {
+    display: none;
+}
+
+.mobile-nav {
+    width: 100%;
+    margin: auto 0;
+    background-color: #CDD6D5;
+}
+
+.mobile-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu li {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin-top: 3px;
+}
+
+.title-header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.car-contain {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel img:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.gallery-section {
+    text-align: center;
+    margin-top: 60px;
+
+}
+
+.gallery-item {
+    margin-top: 20px;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    background-size: cover;
+}
+
+.gallery-item:after {
+    content: "";
+    display: inline-block;
+    padding-bottom: 100%;
+}
+
+.gallery-item:hover {
+    opacity: .8;
+}
+
+.item1 {
+    background-image: url("../Photos/photo1.jpg");
+}
+
+.item2 {
+    background-image: url("../Photos/photo2.jpg");
+}
+
+.item3 {
+    background-image: url("../Photos/photo3.jpg");
+}
+
+footer {
+    width: 100%;
+    padding: 30px;
+    margin-top: 60px;
+    background-color: #7B9BA6;
+    text-align: center;
+}
+
+
+.email-input {
+    background-color: #7B9BA6;
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+    width: 40%;
+}
+
+.footer {
+    padding: 20px;
+}
+
+footer h3 {
+    font-weight: 200;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li:hover {
+    color: white;
+}
+
+.email-submit {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #7B9BA6;
+}
+
+.email-submit:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+/* Media Queries */
+
+@media (min-width: 650px) {
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        background-color: #CDD6D5;
+        box-shadow: 0 0 4px rgba(0, 0, .4);
+        padding: 10px 40px;
+    }
+
+    .title-header {
+        margin-top: 112px;
+        margin-bottom: 60px;
+        padding: 30px;
+    }
+
+    .car-contain {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #mainGallery {
+        max-height: 800px;
+    }
+
+    .gallery {
+        width: 80%;
+    }
+
+
+
+    .gallery-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gallery-item:after {
+        content: "";
+        display: inline-block;
+        padding-bottom: 100%;
+
+    }
+
+    .email-input {
+        width: 60%;
+    }
+
+    .footer {
+        padding: 40px;
+    }
+
+    .footer-logo,
+    .footer-menu,
+    .footer-form {
+        margin: auto 0;
+    }
+
+    .footer-menu {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+}
