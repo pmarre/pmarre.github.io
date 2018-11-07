@@ -43,6 +43,13 @@ a {
     margin-bottom: 60px;
 }
 
+.divider {
+    border-bottom: 1px solid black;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 .car-contain {
     width: 100%;
     padding: 0;
@@ -63,6 +70,11 @@ a {
 .gallery {
     width: 80%;
     margin: 0 auto;
+}
+
+.gallery-header {
+    width: 100%;
+    text-align: center;
 }
 
 .gallery-section {
@@ -87,6 +99,13 @@ a {
 
 .gallery-item:hover {
     opacity: .8;
+}
+
+.gallery-text {
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: solid 1px black;
+    padding: 20px;
 }
 
 .item1 {
@@ -115,7 +134,7 @@ footer {
     border: none;
     border-bottom: 1px solid black;
     box-shadow: none;
-    width: 40%;
+    width: 70%;
 }
 
 .footer {
@@ -174,17 +193,6 @@ footer li:hover {
 
     #mainGallery {
         max-height: 800px;
-    }
-
-    .gallery {
-        width: 80%;
-    }
-
-
-
-    .gallery-header {
-        width: 100%;
-        text-align: center;
     }
 
     .gallery-item:after {
