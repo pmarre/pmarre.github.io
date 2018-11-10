@@ -15,9 +15,8 @@
 <body>
     <div class="container-fluid">
         <header>
-            <nav class="navbar mobile-nav justify-content-between">
-                <ul class="navbar-brand mobile-menu">
-                    <li></li>
+            <nav class="navbar mobile-nav-icon justify-content-between">
+                <ul class="navbar-brand mobile-menu" onclick="openNav()">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -26,6 +25,20 @@
                     <li class="nav-item mx-3"><a class="nav-link" href="#">Solas</a></li>
                 </ul>
             </nav>
+
+
+            <div class="mobile-nav-overlay" id="mobileNav">
+                <div class="popdown row">
+                    <ul class="popdown-menu col-xs-12">
+                        <li>
+                            <p class="close align-self-end" id="close" onclick="closeNav()">x</p>
+                        </li>
+                        <li class="popdown-item"><a href="#" onclick="closeNav()">Home</a></li>
+                        <li class="popdown-item"><a href="#" onclick="closeNav()">Gallery</a></li>
+                        <li class="popdown-item"><a href="#" onclick="closeNav()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
 
 
             <nav class="navbar fixed-top main-nav">
@@ -132,7 +145,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="../JavasScript/solas.js"></script>
 </body>
 
 
