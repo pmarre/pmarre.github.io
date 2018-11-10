@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+body {
+    background-color: #eef4f2;
+}
+
 a {
     color: black;
 }
@@ -19,10 +23,74 @@ a {
     display: none;
 }
 
-.mobile-nav {
+/* --- MOBILE MENU ---*/
+
+.mobile-nav-icon {
     width: 100%;
     margin: auto 0;
     background-color: #CDD6D5;
+}
+
+#mobileNav {
+    background-color: #415b76;
+    height: 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: .5;
+    overflow-x: hidden;
+}
+
+.popdown {
+    width: 100%;
+}
+
+.popdown-menu li {
+    color: #eef4f2;
+    z-index: 200;
+    position: relative;
+    width: 100%;
+    top: 25%;
+}
+
+.popdown-menu {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.popdown-item {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.popdown-item a {
+    color: #eef4f2;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.popdown-item a:hover {
+    color: #cdd6d5;
+    border-bottom: 1px solid #cdd6d5;
+}
+
+.close {
+    margin-top: 20px;
+    color: #eef4f2;
+    font-size: 1.5rem;
+    text-shadow: none;
+    font-weight: 200;
+    text-align: right;
+    opacity: 1;
+    width: 100%;
+}
+
+.close:hover {
+    color: #cdd6d5;
+    cursor: pointer;
 }
 
 .mobile-menu {
@@ -30,12 +98,24 @@ a {
     padding: 0;
 }
 
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+.mobile-menu li:hover {
+    background-color: white;
+
+}
+
 .mobile-menu li {
-    width: 30px;
-    height: 3px;
+    width: 25px;
+    height: 5px;
     background-color: black;
     margin-top: 3px;
 }
+
+
+/*--- END MOBILE MENU ---*/
 
 .title-header {
     text-align: center;
@@ -168,7 +248,11 @@ footer li:hover {
 
 @media (min-width: 650px) {
 
-    .mobile-nav {
+    .mobile-nav-icon {
+        display: none;
+    }
+
+    .mobile-nav-overlay {
         display: none;
     }
 
