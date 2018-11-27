@@ -31,18 +31,19 @@
             <nav class="navbar">
                 <!--     Full page nav           -->
                 <ul class="main-nav">
-                    <li class="nav-item"><a class="home-page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="portfolio-page" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="contact-page" href="#contact-info">Contact</li>
-                </ul>
-
+                    <li class="nav-item nav1"><a class="home-page" href="#">Home</a></li>
+                    <li class="nav-item nav2"><a class="portfolio-page" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item nav3"><a class="education-page" href="#education">Education</a></li>
+                    <li class="nav-item nav4"><a class="contact-page" href="#contact-info">Contact</li>
+                </ul> <!--- END FULL PAGE --->
                 <!--   Mobile Nav -->
                 <div class="overlay" id="myNav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <div class="overlay-content">
-                        <a href="#">Home</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#contact-info">Contact</a>
+                        <a href="#" onclick="closeNav()">Home</a>
+                        <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                        <a href="#education" onclick="closeNav()">Education</a>
+                        <a href="#contact-info" onclick="closeNav()">Contact</a>
                     </div>
                 </div>
                 <div class="icon-container">
@@ -51,16 +52,15 @@
                         <div class="menu-bar"></div>
                         <div class="menu-bar"></div>
                     </div>
-
                 </div>
             </nav>
         </header>
 
-        <div class="banner">
+        <div class="banner" id="banner">
             <div class="container">
                 <div class="title-heading">
                     <h1 class="headline">Patrick Marre</h1>
-
+                    <p class="sub-head">Palo Alto, CA | 503.351.9504 | <a class="email" href="mailto:pmarre40@gmail.com">pmarre40@gmail.com</a></p>
                 </div>
                 <div class="button-contain">
                     <button class="main-btn port-btn"><a href="#portfolio" class="external">Portfolio</a></button>
@@ -73,17 +73,17 @@
                 </div>
             </div>
         </div>
-        <section class="about container">
+        <section class="about container" id="about"><!-- START ABOUT SECTION -->
             <h2 class="about-me">About Me</h2>
             <p class="about-content">My name is Patrick Marre. I am self taught web developer and designer. I graduated from the University of Washington in 2013, where I competed on the UW Rowing team for all four years. My experience there took me around the world and continues to inspire my designs today. Below is a look into some of the work I have done. I hope you enjoy!</p>
-        </section>
-        <section class="portfolio container">
+        </section><!-- END ABOUT SECTION -->
+        <section class="portfolio container" id="portfolios"><!-- START PORTFOLIO SECTION -->
             <h2 class="port-header" id="portfolio">Portfolio</h2>
             <div class="port-contain">
                 <a class="portLinkTwo" href="highestNum.html">
                     <div class="port-item itemOne">
                         <div class="port-text">
-                            <h2 id="port1">Highest Number</h2>
+                            <h2 id="port1">HIGHEST NUMBER</h2>
                             <p id="port1p">A Javascript exercise to find the highest number of a random array</p>
                             <a class="p1-link" href="highestNum.html" target="_blank"><button class="p1-btn">View Site</button></a>
                             <a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/highestNum.html" target="_blank"><button class="github-btn">GITHUB</button></a>
@@ -105,7 +105,7 @@
                 <a class="portLinkThree" href="blackoak/index.html">
                     <div class="port-item itemThree">
                         <div class="port-text port-text2">
-                            <h2 id="port2">Black Oak Forest Consulting</h2>
+                            <h2 id="port2">BLACK OAK FOREST CONSULTING</h2>
                             <p id="port2p">A project focused on using Bootstrap</p>
                             <a class="p1-link" href="blackoak/index.html" target="_blank"><button class="p1-btn">View Site</button></a>
                             <button class="github-btn"><a class="gh-link" href="https://github.com/pmarre/pmarre.github.io/blob/master/blackoak/index.html" target="_blank">GITHUB</a></button>
@@ -113,7 +113,25 @@
                     </div>
                 </a>
             </div>
-        </section>
+        </section><!-- END PORTFOLIO SECTION -->
+        <section class="education container" id="education"><!-- START EDUCATION SECTION -->
+            <h2 class="education-header">Education</h2>
+            <article class="edu-list">
+                <div class="edu-item edu-one"> <!-- START EDU LIST ITEM ONE -->
+                <h3 class="edu-head">Loyola Marymount University</h3>
+                <h4>Certification</h4>
+                <span>Web Application Development</span>
+                </div> <!-- END EDU LIST ITEM ONE -->
+                <div class="edu-date edu-date-one">2018 - Present</div>
+                <div class="edu-item edu-two"> <!-- START EDU LIST ITEM TWO -->
+                <h3 class="edu-head">University of Washington</h3>
+                <h4>Bachelor of Arts</h4>
+                <span>Communication</span>
+                </div> <!-- END EDU LIST ITEM TWO -->
+                <div class="edu-date edu-date-two">2009 - 2013</div>
+                
+            </article>
+        </section> <!-- END EDUCATION SECTION -->
         <footer class="main-footer">
             <div id="contact-info">
                 <span>&copy; 2018 Patrick Marre Design Co.</span>
