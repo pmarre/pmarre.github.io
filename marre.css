@@ -113,6 +113,14 @@ span {
     font-family: "Tinos", cursive;
 }
 
+.title-heading p {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.email {
+    color: white;
+}
 
 h2,
 p {
@@ -137,7 +145,8 @@ a i {
 /*---- Main Content ----*/
 
 .about-me,
-.port-header {
+.port-header, 
+.education-header {
     font-size: 2em;
 }
 
@@ -148,6 +157,42 @@ a i {
     width: 80%;
     margin: 0 auto;
 }
+
+/*---- EDUCATION ----*/
+
+.edu-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.edu-item, .edu-date {
+    width: 45%;
+    margin: 20px auto;
+}
+
+.edu-head {
+    font-family: "Tinos";
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: coral;
+    margin: 0;
+}
+
+.edu-item h4 {
+    color: gray;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.edu-date {
+    text-align: right;
+}
+
+/*---- END EDUCATION ----*/
+
+
 
 
 /*---- Footer ----*/
