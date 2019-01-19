@@ -100,7 +100,10 @@ button {
 .heroImg {
     width: 100%;
     height: 50vh;
-    /* background-color: red; */
+    background-image: url("/Images/illustration-mockups.svg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
 }
 
 .heroImg, .mainLine, .subLine, .ctaBtn {
