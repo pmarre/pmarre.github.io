@@ -100,7 +100,7 @@ button {
 .heroImg {
     width: 100%;
     height: 50vh;
-    background-image: url("/Images/illustration-mockups.svg");
+    background-image: url("pmarre.github.io/huddle/images/illustration-mockups.svg");
     background-repeat: none;
     background-position: center;
     background-size: cover;
